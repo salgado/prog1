@@ -1,3 +1,8 @@
+/*
+2 - Faça um programa em C para ler 30 notas e exibir qual é a maior nota lida
+3 - Complemente o programa anterior exibindo também a menor nota lida
+*/
+
 #include <stdio.h>
 
 int main()
