@@ -2,6 +2,8 @@
 
 int main()
 {
+	int diagonal1A=1;
+   	int diagonal2A=1;
 	int matA[3][3];
 	int matB[3][3];
 	int matC[3][3];
@@ -46,6 +48,7 @@ int main()
 	for(i=0;i<3;i++)
 	{
 		printf("%d ", matA[i][i]);
+		diagonal1A*=matA[i][i];
 	}
 	
 	printf("\n\n");
@@ -56,8 +59,11 @@ int main()
 	for(i=0;i<3;i++)
 	{
 		printf("%d ", matA[i][j]);
+		diagonal2A*=matA[i][j];
 		j--;
 	}
+	//exibir a determinante da matriz A
+	printf("\nA determinante da Matriz A = %d\n", diagonal1A-diagonal2A);
 	
 	//calcular a soma da matriz A e B
 	for(i=0;i<3;i++)
